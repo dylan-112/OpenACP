@@ -1,0 +1,9 @@
+Đọc cho t xem dự án này làm về cái gì
+
+---
+
+/brainstorming
+
+---
+
+/brainstorming T muốn thêm 1 tính năng về việc dùng cli để onboarding cho vệc setup chạy. Người dùng chỉ cần chạy 1 lệnh và chọn các option hay nhập các cái cần để onboarding

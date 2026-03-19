@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "9eb56d895bc1",
+  "session_id": "620be915-4ab5-460b-bab6-ba34066d7d59",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-19T09:25:59.001709Z",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "docs/superpowers/specs/2026-03-19-cli-onboarding-design.md"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-6",
+  "turn_id": "71f796657587",
+  "token_usage": {
+    "input_tokens": 26,
+    "cache_creation_tokens": 36020,
+    "cache_read_tokens": 839962,
+    "output_tokens": 3714,
+    "api_call_count": 22
+  },
+  "session_metrics": {
+    "turn_count": 1
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-19T09:25:58.817223Z",
+    "agent_lines": 153,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 153,
+    "agent_percentage": 100
+  }
+}

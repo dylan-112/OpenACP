@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "9eb56d895bc1",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "docs/superpowers/specs/2026-03-19-cli-onboarding-design.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/9e/b56d895bc1/0/metadata.json",
+      "transcript": "/9e/b56d895bc1/0/full.jsonl",
+      "content_hash": "/9e/b56d895bc1/0/content_hash.txt",
+      "prompt": "/9e/b56d895bc1/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 26,
+    "cache_creation_tokens": 36020,
+    "cache_read_tokens": 839962,
+    "output_tokens": 3714,
+    "api_call_count": 22
+  }
+}
