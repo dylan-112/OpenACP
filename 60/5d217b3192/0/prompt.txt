@@ -118,3 +118,7 @@ bỏ qua cả bước hỏi có lưu config kh mà auto lưu. Bỏ qua bước h
 ---
 
 '/Users/lab3/Documents/lab3/OpenACP/docs/setup-guide.md Update setup-guide này dựa vào '/Users/lab3/Documents/lab3/OpenACP/README.md'. Đừng sửa readme
+
+---
+
+Ok check out sang develop xong commit lên xong chuyển remote qua git@github.com:dylan-112/OpenACP.git và push lên remote mới. Có thể thay đổi thứ tự các bước miễn là t cần code hiện tại lên develop ở remote mới
