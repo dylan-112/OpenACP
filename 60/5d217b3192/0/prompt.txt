@@ -1,0 +1,120 @@
+Ok action wwith this spec
+
+---
+
+1
+
+---
+
+Viết 1 file hướng dẫn dùng cho t. Kiểu file docs
+
+---
+
+'/Users/lab3/Documents/lab3/OpenACP/README.md' Đọc readme và chạy cho t cách cũ xem
+
+---
+
+đã chạy thử chưa
+
+---
+
+R t muốn test tay bắt đầu như nào
+
+---
+
+Xoá heerts để t test cli
+
+---
+
+test cli dùng các lệnh bắt đầu nhu nào
+
+---
+
+Sao lai jkieeru ý '/Users/lab3/Documents/lab3/OpenACP/docs/setup-guide.md'dùng kiểu này cơ
+
+---
+
+➜  OpenACP git:(main) ✗   pnpm build && pnpm link --global @openacp/core
+
+> openacp@ build /Users/lab3/Documents/lab3/OpenACP
+> pnpm -r build
+
+Scope: 2 of 3 workspace projects
+packages/core build$ tsc
+└─ Done in 875ms
+packages/adapters/telegram build$ tsc
+└─ Done in 597ms
+ ERR_PNPM_NO_GLOBAL_BIN_DIR  Unable to find the global bin directory
+
+Run "pnpm setup" to create it automatically, or set the global-bin-dir setting, or the PNPM_HOME env variable. The global bin directory should be in the PATH.
+
+---
+
+zsh: command not found: openacp
+
+---
+
+➜  OpenACP git:(main) ✗ source ~/.zshrc                
+  pnpm link --global @openacp/core                                                                                                                                                                                                                                                                                        
+  openacp     
+Lockfile is up to date, resolution step is skipped
+zsh: command not found: openacp
+➜  OpenACP git:(main) ✗
+
+---
+
+T tưởng nó phải dễ cho người dùng chứ kiểu như này khó quá. Xem xem có update được kh
+
+---
+
+Kéo code mới từ main về và handle conflict cho t. Lấy code base dựa trên nhánh chính
+
+---
+
+Test lại luồng chạy trước đi đã đưa t test tay xem dùng như nào
+
+---
+
+➜  OpenACP git:(main) ✗   rm -f ~/.openacp/config.json                                                                                                                                                                                                                                                                    
+➜  OpenACP git:(main) ✗ openacp
+➜  OpenACP git:(main) ✗ openacp
+➜  OpenACP git:(main) ✗
+
+---
+
+kéo main về conflict đi
+
+---
+
+check thử xem đoạn cài chọn agent config cần ra như này:
+
+---
+
+check thử xem đoạn cài chọn agent config cần ra như này:   "agents": {
+    "claude": {
+      "command": "claude-agent-acp",
+      "args": [],
+      "env": {}
+    }
+  }, Tuy nhiên hiện tại bị ra     "claude": {
+      "command": "claude",
+      "args": [],
+      "env": {}
+    },
+
+---
+
+"command": "claude",
+command tạo ra vẫn như này. T cần ra claude-agent-acp
+
+---
+
+Bỏ bướt bơc 4 trong onboarding và step 2 bỏ phần chọn others agent. Auto chọn claude
+
+---
+
+bỏ qua cả bước hỏi có lưu config kh mà auto lưu. Bỏ qua bước hỏi có chạy kh. auto chạy
+
+---
+
+'/Users/lab3/Documents/lab3/OpenACP/docs/setup-guide.md Update setup-guide này dựa vào '/Users/lab3/Documents/lab3/OpenACP/README.md'. Đừng sửa readme
