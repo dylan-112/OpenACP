@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "5028667bf980",
+  "strategy": "manual-commit",
+  "branch": "develop",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "docs/superpowers/specs/2026-03-20-config-editor-daemon-mode-design.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/50/28667bf980/0/metadata.json",
+      "transcript": "/50/28667bf980/0/full.jsonl",
+      "content_hash": "/50/28667bf980/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 6,
+    "cache_creation_tokens": 3818,
+    "cache_read_tokens": 364214,
+    "output_tokens": 618,
+    "api_call_count": 6
+  }
+}
