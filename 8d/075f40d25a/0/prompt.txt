@@ -23,3 +23,7 @@ Tại sao ob xong chọn deamon nó kh tự run deamon luôn
 ---
 
 ok
+
+---
+
+1
