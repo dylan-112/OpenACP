@@ -1,0 +1,39 @@
+Việc chạy deamon '/Users/lab3/Documents/lab3/OpenACP/docs/superpowers/specs/2026-03-20-config-editor-daemon-mode-design.md'đang phát sinh lỗi như này:
+
+---
+
+Việc chạy deamon '/Users/lab3/Documents/lab3/OpenACP/docs/superpowers/specs/2026-03-20-config-editor-daemon-mode-design.md'đang phát sinh lỗi như này:     "method": "getUpdates",
+      "payload": {
+        "offset": 1,
+        "timeout": 30,
+        "allowed_updates": [
+          "message",
+          "callback_query"
+        ]
+      },
+      "ok": false,
+      "name": "GrammyError",
+      "error_code": 409,
+      "description": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "parameters": {}
+    }. Tìm hiểu xem tại sao cách fix
+
+---
+
+autostart ở đây nghĩa là gì
+
+---
+
+Nó có thế chỉ khi bot đang chạy kh
+
+---
+
+Thế thì t chỉ cần nó start chỉ khi mà người dùng đang start xong tắt máy đi bật lại. Còn đang stop mà bật máy lên thì sẽ kh chạy
+
+---
+
+Nên đẻ mark là start còn đâu kh có mark start auto là stop hơn
+
+---
+
+Ok task tiếp theo thêm command reset. Và có hỏi lại confirm để xoá hết cho openacp
