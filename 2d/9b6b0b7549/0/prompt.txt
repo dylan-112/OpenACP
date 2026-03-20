@@ -1,0 +1,247 @@
+Ok action wwith this spec
+
+---
+
+1
+
+---
+
+Viết 1 file hướng dẫn dùng cho t. Kiểu file docs
+
+---
+
+'/Users/lab3/Documents/lab3/OpenACP/README.md' Đọc readme và chạy cho t cách cũ xem
+
+---
+
+đã chạy thử chưa
+
+---
+
+R t muốn test tay bắt đầu như nào
+
+---
+
+Xoá heerts để t test cli
+
+---
+
+test cli dùng các lệnh bắt đầu nhu nào
+
+---
+
+Sao lai jkieeru ý '/Users/lab3/Documents/lab3/OpenACP/docs/setup-guide.md'dùng kiểu này cơ
+
+---
+
+➜  OpenACP git:(main) ✗   pnpm build && pnpm link --global @openacp/core
+
+> openacp@ build /Users/lab3/Documents/lab3/OpenACP
+> pnpm -r build
+
+Scope: 2 of 3 workspace projects
+packages/core build$ tsc
+└─ Done in 875ms
+packages/adapters/telegram build$ tsc
+└─ Done in 597ms
+ ERR_PNPM_NO_GLOBAL_BIN_DIR  Unable to find the global bin directory
+
+Run "pnpm setup" to create it automatically, or set the global-bin-dir setting, or the PNPM_HOME env variable. The global bin directory should be in the PATH.
+
+---
+
+zsh: command not found: openacp
+
+---
+
+➜  OpenACP git:(main) ✗ source ~/.zshrc                
+  pnpm link --global @openacp/core                                                                                                                                                                                                                                                                                        
+  openacp     
+Lockfile is up to date, resolution step is skipped
+zsh: command not found: openacp
+➜  OpenACP git:(main) ✗
+
+---
+
+T tưởng nó phải dễ cho người dùng chứ kiểu như này khó quá. Xem xem có update được kh
+
+---
+
+Kéo code mới từ main về và handle conflict cho t. Lấy code base dựa trên nhánh chính
+
+---
+
+Test lại luồng chạy trước đi đã đưa t test tay xem dùng như nào
+
+---
+
+➜  OpenACP git:(main) ✗   rm -f ~/.openacp/config.json                                                                                                                                                                                                                                                                    
+➜  OpenACP git:(main) ✗ openacp
+➜  OpenACP git:(main) ✗ openacp
+➜  OpenACP git:(main) ✗
+
+---
+
+kéo main về conflict đi
+
+---
+
+check thử xem đoạn cài chọn agent config cần ra như này:
+
+---
+
+check thử xem đoạn cài chọn agent config cần ra như này:   "agents": {
+    "claude": {
+      "command": "claude-agent-acp",
+      "args": [],
+      "env": {}
+    }
+  }, Tuy nhiên hiện tại bị ra     "claude": {
+      "command": "claude",
+      "args": [],
+      "env": {}
+    },
+
+---
+
+"command": "claude",
+command tạo ra vẫn như này. T cần ra claude-agent-acp
+
+---
+
+Bỏ bướt bơc 4 trong onboarding và step 2 bỏ phần chọn others agent. Auto chọn claude
+
+---
+
+bỏ qua cả bước hỏi có lưu config kh mà auto lưu. Bỏ qua bước hỏi có chạy kh. auto chạy
+
+---
+
+'/Users/lab3/Documents/lab3/OpenACP/docs/setup-guide.md Update setup-guide này dựa vào '/Users/lab3/Documents/lab3/OpenACP/README.md'. Đừng sửa readme
+
+---
+
+Ok check out sang develop xong commit lên xong chuyển remote qua git@github.com:dylan-112/OpenACP.git và push lên remote mới. Có thể thay đổi thứ tự các bước miễn là t cần code hiện tại lên develop ở remote mới
+
+---
+
+kéo develop từ remote https://github.com/Open-ACP/OpenACP.git về xử lý conflict r đẩy lên
+
+---
+
+kéo code mới nhất về
+
+---
+
+Ok h t muốn bắt đầu dùng thử như nào
+
+---
+
+Kéo code mới nhất về
+
+---
+
+Luông chạy bước 2 là như nào
+
+---
+
+Đoạn lưu vào config.json đâu
+
+---
+
+npm install -g @openacp/cli
+Hqua t chạy lệnh này. Xoá đi để nó đỡ conflict
+
+---
+
+có
+
+---
+
+ok h t muốn build lại code trong này xong r run lại thì dùng những lệnh nào
+
+---
+
+"agents": {
+    "claude": {
+      "command": "claude",
+      "args": [],
+      "env": {}
+    }
+  }, chỗ command tại sao cứ là claude. T muốn nó là claude-agent-acp
+
+---
+
+Tại sao command claude-agent-acp thì chạy mà claude thì kh chạy
+
+---
+
+function commandExists(cmd: string): boolean {
+  // Check system PATH
+  try {
+    execFileSync("which", [cmd], { stdio: "pipe" });
+    return true;
+  } catch {
+    // not in PATH
+  }
+  // Check node_modules/.bin (walks up from cwd)
+  let dir = process.cwd();
+  while (true) {
+    const binPath = path.join(dir, "node_modules", ".bin", cmd);
+    if (fs.existsSync(binPath)) return true;
+    const parent = path.dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  return false;
+} đoạn này dùng làm gì
+
+---
+
+Thử check tay claude-agent-acp đi
+
+---
+
+Thế bỏ đoạn commandExists đi au to lấy agents đầu
+
+---
+
+"text": "❌ Failed to spawn agent \"claude\": spawn claude-agent-acp ENOENT. Is \"claude-agent-acp\" installed?",
+
+---
+
+do code chưa kéo mới nhất về đó. Kéo về đi
+
+---
+
+[2026-03-20 10:30:55.744 +0700] DEBUG (39990): Spawning agent
+    module: "agent-instance"
+    agentName: "claude"
+    command: "/opt/homebrew/Cellar/node/25.6.1_1/bin/node"
+    args: [
+      "/Users/lab3/Documents/lab3/OpenACP/node_modules/@zed-industries/claude-agent-acp/dist/index.js"
+    ]
+[2026-03-20 10:30:55.746 +0700] DEBUG (39990): ACP raw
+    module: "agent-instance"
+    direction: "send"
+    raw: "{\"jsonrpc\":\"2.0\",\"id\":0,\"method\":\"initialize\",\"params\":{\"protocolVersion\":1,\"clientCapabilities\":{\"fs\":{\"readTextFile\":true,\"writeTextFile\":true},\"terminal\":true}}}"
+[2026-03-20 10:30:55.931 +0700] DEBUG (39990): ACP raw
+    module: "agent-instance"
+    direction: "recv"
+    raw: "{\"jsonrpc\":\"2.0\",\"id\":0,\"result\":{\"protocolVersion\":1,\"agentCapabilities\":{\"_meta\":{\"claudeCode\":{\"promptQueueing\":true}},\"promptCapabilities\":{\"image\":true,\"embeddedContext\":true},\"mcpCapabilities\":{\"http\":true,\"sse\":true},\"loadSession\":true,\"sessionCapabilities\":{\"fork\":{},\"list\":{},\"resume\":{},\"close\":{}}},\"agentInfo\":{\"name\":\"@zed-industries/claude-agent-acp\",\"title\":\"Claude Agent\",\"version\":\"0.22.2\"},\"authMethods\":[]}}"
+[2026-03-20 10:30:55.931 +0700] DEBUG (39990): ACP raw
+    module: "agent-instance"
+    direction: "send"
+    raw: "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"session/new\",\"params\":{\"cwd\":\"'/Users/lab3/Documents/lab3'\",\"mcpServers\":[]}}"
+[2026-03-20 10:30:55.940 +0700] DEBUG (39990): ACP raw
+    module: "agent-instance"
+    direction: "recv"
+    raw: "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32603,\"message\":\"Internal error\",\"data\":{\"details\":\"Query closed before response received\"}}}"
+
+---
+
+ok it work. Tiếp theo trong quá trình t onboarding, t thấy việc phải đi lấy group chat id. T thấy rất mất thời gian. Có cơ chế nào để m tự lấy kh. Có thể piairng hay gì đó
+
+---
+
+ok
