@@ -1,0 +1,244 @@
+ok
+
+---
+
+1
+
+---
+
+ok t muốn test tay t trước đưa t cách t test các chức năng mới đi .
+
+---
+
+sao lại là pnpm. openacp chứ
+
+---
+
+Tại sao ob xong chọn deamon nó kh tự run deamon luôn
+
+---
+
+/brainstorming con bot assistant sau khi tạo ra có 1 vài command new session t muốn đưa cả cái đó vào cli
+
+---
+
+ok
+
+---
+
+1
+
+---
+
+➜  OpenACP git:(develop) ✗ openacp runtime new claude
+Session created
+  ID     : iw5pyoR7z-6s
+  Agent  : claude
+  Status : initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status    
+Active sessions: 2
+
+  e0LkMYR5pks4  claude  active  "OpenACP session management introduction"
+  iw5pyoR7z-6s  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 2
+
+  e0LkMYR5pks4  claude  active  "OpenACP session management introduction"
+  iw5pyoR7z-6s  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 2
+
+  e0LkMYR5pks4  claude  active  "OpenACP session management introduction"
+  iw5pyoR7z-6s  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status tạị sao nó cứ initializing. Và t thấy thiếu lệnh new này kh được chọn workspace folder
+
+---
+
+➜  OpenACP git:(develop) ✗ openacp stop                 
+OpenACP daemon stopped (was PID 1666)
+➜  OpenACP git:(develop) ✗ openacp start
+OpenACP daemon started (PID 11148)
+➜  OpenACP git:(develop) ✗ openacp runtime status
+OpenACP is not running. Start with `openacp start`
+➜  OpenACP git:(develop) ✗
+
+---
+
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 2
+
+  zmuBNZ5UzLl2  claude  active  "OpenACP session management introduction"
+  0tSJ93AVJ9E_  claude  initializing Nó cứ initializing mãi có vẻ conflict với thằng có trước. Test xem. Thực ra theo t hiểu nó là 1 sestion nhưng chạy ở 2 workspace khác nhau đọc kỹ tính năng của project hiện tại để biết rõ hơn
+
+---
+
+async function handleNew(
+  ctx: Context,
+  core: OpenACPCore,
+  chatId: number,
+): Promise<void> {
+  const rawMatch = (ctx as Context & { match: unknown }).match;
+  const matchStr = typeof rawMatch === "string" ? rawMatch : "";
+  const args = matchStr.split(" ").filter(Boolean);
+  const agentName = args[0];
+  const workspace = args[1];
+
+  log.info({ userId: ctx.from?.id, agentName }, 'New session command')
+
+  // Create topic first so threadId is ready before session events fire
+  let threadId: number | undefined;
+  try {
+    const topicName = `🔄 New Session`;
+    threadId = await createSessionTopic(botFromCtx(ctx), chatId, topicName);
+
+    // Let user know we're setting up (spawn + warm-up can take a while)
+    await ctx.api.sendMessage(chatId, `⏳ Setting up session, please wait...`, {
+      message_thread_id: threadId,
+      parse_mode: "HTML",
+    });
+
+    const session = await core.handleNewSession(
+      "telegram",
+      agentName,
+      workspace,
+    );
+    session.threadId = String(threa;
+
+    // Rename topic with actual agent name
+    const finalName = `🔄 ${session.agentName} — New Session`;
+    try {
+      await ctx.api.editForumTopic(chatId, threadId, { name: finalName });
+    } catch {
+      /* ignore rename failures */
+    }
+
+    await ctx.api.sendMessage(
+      chatId,
+      `✅ Session started\n` +
+        `<b>Agent:</b> ${escapeHtml(session.agentName)}\n` +
+        `<b>Workspace:</b> <code>${escapeHtml(session.workingDirectory)}</code>`,
+      {
+        message_thread_id: threadId,
+        parse_mode: "HTML",
+      },
+    );
+
+    // Warm up model cache in background while user types
+    session.warmup().catch((err) => log.error({ err }, "Warm-up error"));
+  } catch (err) {
+    // Clean up orphaned topic if session creation failed
+    if (threadId) {
+      try {
+        await ctx.api.deleteForumTopic(chatId, threadId);
+      } catch {
+        /* ignore cleanup failures */
+      }
+    }
+    const message = err instanceof Error ? err.message : String(err);
+    await ctx.reply(`�apeHtml(message)}`, { parse_mode: "HTML" });
+  }
+}
+ T muốn khi chạy openacp runtime new claude /Users/lab3/Documents/lab3 nó sẽ giống như chạy như này
+
+---
+
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 5
+
+  6QqXIL_FXLOT  claude  active  "Model selection configuration"
+  19kH8HylFVOo  claude  initializing
+  g3G1fHo7ttju  claude  initializing
+  ZgiRIYhtJw7b  claude  initializing
+  8pw8U6G5xFNs  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 5
+
+  6QqXIL_FXLOT  claude  active  "Model selection configuration"
+  19kH8HylFVOo  claude  initializing
+  g3G1fHo7ttju  claude  initializing
+  ZgiRIYhtJw7b  claude  initializing
+  8pw8U6G5xFNs  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 5
+
+  6QqXIL_FXLOT  claude  active  "Model selection configuration"
+  19kH8HylFVOo  claude  initializing
+  g3G1fHo7ttju  claude  initializing
+  ZgiRIYhtJw7b  claude  initializing
+  8pw8U6G5xFNs  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 5
+
+  6QqXIL_FXLOT  claude  active  "Model selection configuration"
+  19kH8HylFVOo  clau
+  g3G1fHo7ttju  claude  initializing
+  ZgiRIYhtJw7b  claude  initializing
+  8pw8U6G5xFNs  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 5
+
+  6QqXIL_FXLOT  claude  active  "Model selection configuration"
+  19kH8HylFVOo  claude  initializing
+  g3G1fHo7ttju  claude  initializing
+  ZgiRIYhtJw7b  claude  initializing
+  8pw8U6G5xFNs  claude  initializing
+➜  OpenACP git:(develop) ✗  Nó vẫn như này và kh có chat nào mới trên tele hiện ra
+
+---
+
+ZgiRIYhtJw7b  claude  initializing
+  8pw8U6G5xFNs  claude  initializing
+  dfrqlzjL1JhS  claude  initializing
+
+---
+
+[2026-03-20 16:47:55.041 +0700] INFO (40304): Config loaded
+    configPath: "/Users/lab3/.openacp/config.json"
+[2026-03-20 16:47:55.041 +0700] INFO (40304): Adapter registered
+    adapter: "telegram"
+[2026-03-20 16:47:56.778 +0700] INFO (40304): Telegram bot started
+    module: "telegram"
+    chatId: -1003742737379
+[2026-03-20 16:47:57.939 +0700] INFO (40304): Agent spawn complete
+    module: "agent-instance"
+    sessionId: "c70fd02a-2df2-457c-8f23-1075adf9661c"
+    durationMs: 1865
+[2026-03-20 16:47:57.940 +0700] INFO (40304): Session created
+    module: "session"
+    sessionId: "bQ0jYU3PllTe"
+    agentName: "claude"
+[2026-03-20 16:48:02.537 +0700] INFO (40304): Prompt execution completed
+    module: "session"
+    sessionId: "bQ0jYU3PllTe"
+    durationMs: 4596
+[2026-03-20 16:48:05.106 +0700] INFO (Model configuration change/40304): Session auto-named
+    module: "session"
+    sessionId: "bQ0jYU3PllTe"
+[2026-03-20 16:48:05.746 +0700] INFO (40304): API server listening
+    module: "api-server"
+    host: "127.0.0.1"
+    port: 21420
+[2026-03-20 16:48:05.746 +0700] INFO (40304): OpenACP started
+    agents: [
+      "claude"
+    ]
+[2026-03-20 16:48:05.746 +0700] INFO (40304): Press Ctrl+C to stop
+[2026-03-20 16:48:32.829 +0700] INFO (40304): New session request
+    module: "core"
+    channelId: "telegram"
+    agentName: "claude"
+[2026-03-20 16:48:34.583 +0700] INFO (40304): Agent spawn complete
+    module: "agent-instance"
+    sessionId: "34fd069a-0596-4868-b276-c6d785b59eb4"
+    durationMs: 1754
+[2026-03-20 16:48:34.583 +0700] INFO (40304): Session created
+    module: "session"
+    sessionId: "IGm3n5tra7QW"
+    agentName: "claude"
+[2026-03-20 16:48:34.583 +0700] INFO (🔄 claude — New Session/40304): Session topic created
+    module: "telegram"
+    sessionId: "IGm3n5tra7QW"
+[2026-03-20 16:48:37.858 +0700] INFO (40304): Warm-up complete
+    module: "session"
+    sessionId: "IGm3n5tra7QW"
+    durationMs: 2678 here is log but session still initializing
