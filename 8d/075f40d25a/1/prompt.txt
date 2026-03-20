@@ -25,3 +25,7 @@ autostart ở đây nghĩa là gì
 ---
 
 Nó có thế chỉ khi bot đang chạy kh
+
+---
+
+Thế thì t chỉ cần nó start chỉ khi mà người dùng đang start xong tắt máy đi bật lại. Còn đang stop mà bật máy lên thì sẽ kh chạy
