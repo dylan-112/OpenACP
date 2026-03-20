@@ -1,0 +1,19 @@
+Việc chạy deamon '/Users/lab3/Documents/lab3/OpenACP/docs/superpowers/specs/2026-03-20-config-editor-daemon-mode-design.md'đang phát sinh lỗi như này:
+
+---
+
+Việc chạy deamon '/Users/lab3/Documents/lab3/OpenACP/docs/superpowers/specs/2026-03-20-config-editor-daemon-mode-design.md'đang phát sinh lỗi như này:     "method": "getUpdates",
+      "payload": {
+        "offset": 1,
+        "timeout": 30,
+        "allowed_updates": [
+          "message",
+          "callback_query"
+        ]
+      },
+      "ok": false,
+      "name": "GrammyError",
+      "error_code": 409,
+      "description": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "parameters": {}
+    }. Tìm hiểu xem tại sao cách fix
