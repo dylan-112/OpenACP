@@ -27,3 +27,27 @@ ok
 ---
 
 1
+
+---
+
+➜  OpenACP git:(develop) ✗ openacp runtime new claude
+Session created
+  ID     : iw5pyoR7z-6s
+  Agent  : claude
+  Status : initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status    
+Active sessions: 2
+
+  e0LkMYR5pks4  claude  active  "OpenACP session management introduction"
+  iw5pyoR7z-6s  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 2
+
+  e0LkMYR5pks4  claude  active  "OpenACP session management introduction"
+  iw5pyoR7z-6s  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status
+Active sessions: 2
+
+  e0LkMYR5pks4  claude  active  "OpenACP session management introduction"
+  iw5pyoR7z-6s  claude  initializing
+➜  OpenACP git:(develop) ✗ openacp runtime status tạị sao nó cứ initializing. Và t thấy thiếu lệnh new này kh được chọn workspace folder
