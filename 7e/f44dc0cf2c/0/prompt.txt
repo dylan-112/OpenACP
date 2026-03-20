@@ -1,0 +1,33 @@
+/brainstorming
+
+---
+
+/brainstorming Thêm một vài tính năng sau:
+
+---
+
+/superpowers:brainstorming Thêm một vài tính năng sau: Thêm cli openacp --configuration để update các config. Và tính năng cho phép người dùng chọn chạy ngầm hay chạy terminal như hiện tại lúc onboarding.
+
+---
+
+A nhưng t cần thêm tính năng auto run khi khởi động lại máy nếu đang chạy background
+
+---
+
+ok
+
+---
+
+ok
+
+---
+
+ok
+
+---
+
+ok
+
+---
+
+ok
