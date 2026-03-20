@@ -1,0 +1,21 @@
+ok
+
+---
+
+1
+
+---
+
+ok t muốn test tay t trước đưa t cách t test các chức năng mới đi .
+
+---
+
+sao lại là pnpm. openacp chứ
+
+---
+
+Tại sao ob xong chọn deamon nó kh tự run deamon luôn
+
+---
+
+/brainstorming con bot assistant sau khi tạo ra có 1 vài command new session t muốn đưa cả cái đó vào cli

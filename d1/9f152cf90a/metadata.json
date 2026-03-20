@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "d19f152cf90a",
+  "strategy": "manual-commit",
+  "branch": "develop",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/superpowers/specs/2026-03-20-runtime-api-cli-design.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/d1/9f152cf90a/0/metadata.json",
+      "transcript": "/d1/9f152cf90a/0/full.jsonl",
+      "content_hash": "/d1/9f152cf90a/0/content_hash.txt",
+      "prompt": "/d1/9f152cf90a/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 181,
+    "cache_creation_tokens": 218091,
+    "cache_read_tokens": 13502679,
+    "output_tokens": 25899,
+    "api_call_count": 145
+  }
+}
