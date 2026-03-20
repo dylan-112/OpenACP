@@ -245,3 +245,15 @@ ok it work. Tiếp theo trong quá trình t onboarding, t thấy việc phải �
 ---
 
 ok
+
+---
+
+default là detect group luôn. Trong quá trình đó thì thêm nút bấm gì đó để huỷ detect và nhập bằng tay.
+
+---
+
+Thêm hướng dẫn người dùng tạo supergroup. ngắn gọn đơn giản. Thêm bước 123 kiểu vậy. Các bước cần có UI text đẹp hơn. nhấn mạnh vào đ úng chỗ success thì thêm màu. Bỏ các cái hiển thị kh cần thiết
+
+---
+
+ok commit xong push code lên
