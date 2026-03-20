@@ -1,0 +1,5 @@
+Ok task tiếp theo ở '/Users/lab3/Documents/lab3/OpenACP/src/core/setup.ts' onboarding. Ở bước group check xem con bot nghe được chat của đúng là chat group chưa. Và nếu trong group bot đã được cấp quyền admin chưa. Nếu chưa báo lỗi, báo người dùng update lại
+
+---
+
+kh skip được báo người dùng cách update
