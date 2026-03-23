@@ -1,0 +1,51 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "38ccedede76e",
+  "strategy": "manual-commit",
+  "branch": "develop",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/guide/development.md",
+    "docs/superpowers/plans/2026-03-20-runtime-api-cli.md",
+    "docs/superpowers/plans/2026-03-20-session-persistence.md",
+    "docs/superpowers/specs/2026-03-20-runtime-api-cli-design.md",
+    "package.json",
+    "pnpm-lock.yaml",
+    "src/__tests__/api-server.test.ts",
+    "src/adapters/telegram/adapter.ts",
+    "src/adapters/telegram/commands.ts",
+    "src/adapters/telegram/formatting.ts",
+    "src/cli.ts",
+    "src/core/agent-instance.ts",
+    "src/core/agent-manager.ts",
+    "src/core/api-server.ts",
+    "src/core/config.ts",
+    "src/core/core.ts",
+    "src/core/index.ts",
+    "src/core/session-manager.ts",
+    "src/core/session-store.ts",
+    "src/core/session.ts",
+    "src/core/setup.ts",
+    "src/core/types.ts",
+    "src/main.ts",
+    "src/tunnel/extract-file-info.ts",
+    "src/tunnel/providers/cloudflare.ts",
+    "src/tunnel/templates/file-viewer.ts",
+    "src/tunnel/tunnel-service.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/38/ccedede76e/0/metadata.json",
+      "transcript": "/38/ccedede76e/0/full.jsonl",
+      "content_hash": "/38/ccedede76e/0/content_hash.txt",
+      "prompt": "/38/ccedede76e/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 358,
+    "cache_creation_tokens": 407615,
+    "cache_read_tokens": 27956003,
+    "output_tokens": 51570,
+    "api_call_count": 280
+  }
+}

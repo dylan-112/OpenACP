@@ -1,0 +1,60 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "38ccedede76e",
+  "session_id": "4d226519-dc36-4958-84b3-58ec7196c127",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-23T02:34:48.781482Z",
+  "branch": "develop",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/guide/development.md",
+    "docs/superpowers/plans/2026-03-20-runtime-api-cli.md",
+    "docs/superpowers/plans/2026-03-20-session-persistence.md",
+    "docs/superpowers/specs/2026-03-20-runtime-api-cli-design.md",
+    "package.json",
+    "pnpm-lock.yaml",
+    "src/__tests__/api-server.test.ts",
+    "src/adapters/telegram/adapter.ts",
+    "src/adapters/telegram/commands.ts",
+    "src/adapters/telegram/formatting.ts",
+    "src/cli.ts",
+    "src/core/agent-instance.ts",
+    "src/core/agent-manager.ts",
+    "src/core/api-server.ts",
+    "src/core/config.ts",
+    "src/core/core.ts",
+    "src/core/index.ts",
+    "src/core/session-manager.ts",
+    "src/core/session-store.ts",
+    "src/core/session.ts",
+    "src/core/setup.ts",
+    "src/core/types.ts",
+    "src/main.ts",
+    "src/tunnel/extract-file-info.ts",
+    "src/tunnel/providers/cloudflare.ts",
+    "src/tunnel/templates/file-viewer.ts",
+    "src/tunnel/tunnel-service.ts"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-6",
+  "turn_id": "4e084ea5a765",
+  "token_usage": {
+    "input_tokens": 358,
+    "cache_creation_tokens": 407615,
+    "cache_read_tokens": 27956003,
+    "output_tokens": 51570,
+    "api_call_count": 280
+  },
+  "session_metrics": {
+    "turn_count": 29
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-23T02:34:45.764382Z",
+    "agent_lines": 0,
+    "human_added": 31085,
+    "human_modified": 1698,
+    "human_removed": 0,
+    "total_committed": 31085,
+    "agent_percentage": 0
+  }
+}
