@@ -15,3 +15,11 @@ ok
 ---
 
 ok
+
+---
+
+ok
+
+---
+
+ok tạo worktree mới r làm cho t
