@@ -1,0 +1,9 @@
+hi
+
+---
+
+Đọc tính năng từ https://github.com/Open-ACP/OpenACP/releases/tag/v0.5.2 và xem nó ở đoạn nào trong code
+
+---
+
+/brainstorming T muốn implement this features with discord

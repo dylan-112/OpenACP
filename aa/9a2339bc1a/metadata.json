@@ -4,13 +4,28 @@
   "strategy": "manual-commit",
   "branch": "develop",
   "checkpoints_count": 1,
-  "files_touched": null,
+  "files_touched": [
+    "docs/superpowers/specs/2026-03-23-discord-media-support-design.md"
+  ],
   "sessions": [
     {
       "metadata": "/aa/9a2339bc1a/0/metadata.json",
       "transcript": "/aa/9a2339bc1a/0/full.jsonl",
       "content_hash": "/aa/9a2339bc1a/0/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/aa/9a2339bc1a/1/metadata.json",
+      "transcript": "/aa/9a2339bc1a/1/full.jsonl",
+      "content_hash": "/aa/9a2339bc1a/1/content_hash.txt",
+      "prompt": "/aa/9a2339bc1a/1/prompt.txt"
     }
-  ]
+  ],
+  "token_usage": {
+    "input_tokens": 48,
+    "cache_creation_tokens": 55946,
+    "cache_read_tokens": 2032005,
+    "output_tokens": 4097,
+    "api_call_count": 40
+  }
 }
