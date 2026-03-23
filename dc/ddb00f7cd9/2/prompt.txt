@@ -1,0 +1,1 @@
+check lại change docs này khá outdate r. H kh còn openacp runtime nữa. https://github.com/Open-ACP/OpenACP/pull/34/changes#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5 ngoài ra còn husky tại sao m tự thêm vào t kh yêu cầuhttps://github.com/Open-ACP/OpenACP/pull/34/changes
