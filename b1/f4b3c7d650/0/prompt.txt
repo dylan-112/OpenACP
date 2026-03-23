@@ -1,0 +1,17 @@
+1
+
+---
+
+Cái token sao lại lưu ở env nhỉ. T utowng là thêm vào onboarding người dùng sẽ nhập và lưu vào file config như tele
+
+---
+
+Dùng tieengsanh hết nhé
+
+---
+
+ok
+
+---
+
+ok
