@@ -3,8 +3,10 @@
   "checkpoint_id": "452041c47940",
   "strategy": "manual-commit",
   "branch": "develop",
-  "checkpoints_count": 1,
-  "files_touched": null,
+  "checkpoints_count": 3,
+  "files_touched": [
+    "src/adapters/discord/adapter.ts"
+  ],
   "sessions": [
     {
       "metadata": "/45/2041c47940/0/metadata.json",
@@ -17,13 +19,19 @@
       "transcript": "/45/2041c47940/1/full.jsonl",
       "content_hash": "/45/2041c47940/1/content_hash.txt",
       "prompt": "/45/2041c47940/1/prompt.txt"
+    },
+    {
+      "metadata": "/45/2041c47940/2/metadata.json",
+      "transcript": "/45/2041c47940/2/full.jsonl",
+      "content_hash": "/45/2041c47940/2/content_hash.txt",
+      "prompt": "/45/2041c47940/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 4,
-    "cache_creation_tokens": 4694,
-    "cache_read_tokens": 499855,
-    "output_tokens": 162,
-    "api_call_count": 4
+    "input_tokens": 30,
+    "cache_creation_tokens": 48128,
+    "cache_read_tokens": 1409619,
+    "output_tokens": 2334,
+    "api_call_count": 24
   }
 }
