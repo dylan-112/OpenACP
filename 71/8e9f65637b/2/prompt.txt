@@ -1,0 +1,17 @@
+ok
+
+---
+
+1
+
+---
+
+T gửi file text nhưng claude kh đọc được
+
+---
+
+T gửi cho discord nhưng kh dược.làm sao để check lỗi gì
+
+---
+
+ok nãy h t gửi file r check log xem

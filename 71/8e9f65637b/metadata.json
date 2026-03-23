@@ -3,7 +3,7 @@
   "checkpoint_id": "718e9f65637b",
   "strategy": "manual-commit",
   "branch": "develop",
-  "checkpoints_count": 2,
+  "checkpoints_count": 4,
   "files_touched": [
     "README.md",
     "src/adapters/discord/adapter.ts",
@@ -23,13 +23,19 @@
       "transcript": "/71/8e9f65637b/1/full.jsonl",
       "content_hash": "/71/8e9f65637b/1/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/71/8e9f65637b/2/metadata.json",
+      "transcript": "/71/8e9f65637b/2/full.jsonl",
+      "content_hash": "/71/8e9f65637b/2/content_hash.txt",
+      "prompt": "/71/8e9f65637b/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 48,
-    "cache_creation_tokens": 64401,
-    "cache_read_tokens": 2764543,
-    "output_tokens": 3965,
-    "api_call_count": 42
+    "input_tokens": 97,
+    "cache_creation_tokens": 89533,
+    "cache_read_tokens": 8503621,
+    "output_tokens": 6640,
+    "api_call_count": 81
   }
 }
