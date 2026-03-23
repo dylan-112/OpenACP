@@ -1,0 +1,33 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "0ff0b9d5220d",
+  "session_id": "a084eed1-f80e-4714-9265-e10af5c386bc",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-23T02:56:22.867425Z",
+  "branch": "develop",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/superpowers/specs/2026-03-23-critical-fixes-issue-21-design.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "b31aa1f352a7",
+  "token_usage": {
+    "input_tokens": 57,
+    "cache_creation_tokens": 53690,
+    "cache_read_tokens": 2025034,
+    "output_tokens": 9322,
+    "api_call_count": 46
+  },
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-23T02:56:22.476915Z",
+    "agent_lines": 24,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 24,
+    "agent_percentage": 100
+  }
+}
