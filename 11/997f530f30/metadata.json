@@ -3,7 +3,7 @@
   "checkpoint_id": "11997f530f30",
   "strategy": "manual-commit",
   "branch": "develop",
-  "checkpoints_count": 2,
+  "checkpoints_count": 3,
   "files_touched": [
     ".husky/commit-msg",
     ".husky/post-commit",
@@ -26,13 +26,19 @@
       "transcript": "/11/997f530f30/1/full.jsonl",
       "content_hash": "/11/997f530f30/1/content_hash.txt",
       "prompt": "/11/997f530f30/1/prompt.txt"
+    },
+    {
+      "metadata": "/11/997f530f30/2/metadata.json",
+      "transcript": "/11/997f530f30/2/full.jsonl",
+      "content_hash": "/11/997f530f30/2/content_hash.txt",
+      "prompt": "/11/997f530f30/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 406,
-    "cache_creation_tokens": 117439,
-    "cache_read_tokens": 6314303,
-    "output_tokens": 12908,
-    "api_call_count": 81
+    "input_tokens": 415,
+    "cache_creation_tokens": 125796,
+    "cache_read_tokens": 6764137,
+    "output_tokens": 14980,
+    "api_call_count": 88
   }
 }
