@@ -27,3 +27,7 @@ ok push lên
 ---
 
 Đoạn setup discord bot khá là rắc rối. T cần m viết 1 file MD để hướng dẫn chi tiết tạo bot và cho bot full quyền trong 1 channel. Đồng thời update onboarding hướng dẫn cơ bản setup discord bot nếu chọn channel discord. Và có 1 nút click link bên dưới hướng dẫn detail mở link github file MD vừa tạo bên trên
+
+---
+
+ok commit xong push lên
