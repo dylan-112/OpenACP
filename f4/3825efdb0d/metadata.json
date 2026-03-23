@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "f43825efdb0d",
+  "strategy": "manual-commit",
+  "branch": "develop",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "docs/superpowers/plans/2026-03-23-discord-adapter.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/f4/3825efdb0d/0/metadata.json",
+      "transcript": "/f4/3825efdb0d/0/full.jsonl",
+      "content_hash": "/f4/3825efdb0d/0/content_hash.txt",
+      "prompt": "/f4/3825efdb0d/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 4610,
+    "cache_creation_tokens": 112452,
+    "cache_read_tokens": 5051996,
+    "output_tokens": 9230,
+    "api_call_count": 67
+  }
+}
