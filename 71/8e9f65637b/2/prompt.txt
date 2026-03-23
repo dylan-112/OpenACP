@@ -15,3 +15,7 @@ T gửi cho discord nhưng kh dược.làm sao để check lỗi gì
 ---
 
 ok nãy h t gửi file r check log xem
+
+---
+
+ok commit lên
