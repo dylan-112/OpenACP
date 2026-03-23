@@ -1,0 +1,1 @@
+/brainstorming I want to add addapter discord that same function with tele. base on '/Users/lab3/Documents/lab3/OpenACP/src/adapters' to do it
