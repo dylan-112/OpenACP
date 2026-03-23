@@ -3,7 +3,7 @@
   "checkpoint_id": "0ff0b9d5220d",
   "strategy": "manual-commit",
   "branch": "develop",
-  "checkpoints_count": 7,
+  "checkpoints_count": 11,
   "files_touched": [
     "docs/superpowers/specs/2026-03-23-critical-fixes-issue-21-design.md"
   ],
@@ -25,13 +25,19 @@
       "transcript": "/0f/f0b9d5220d/2/full.jsonl",
       "content_hash": "/0f/f0b9d5220d/2/content_hash.txt",
       "prompt": "/0f/f0b9d5220d/2/prompt.txt"
+    },
+    {
+      "metadata": "/0f/f0b9d5220d/3/metadata.json",
+      "transcript": "/0f/f0b9d5220d/3/full.jsonl",
+      "content_hash": "/0f/f0b9d5220d/3/content_hash.txt",
+      "prompt": "/0f/f0b9d5220d/3/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 82,
-    "cache_creation_tokens": 85530,
-    "cache_read_tokens": 2327321,
-    "output_tokens": 10375,
-    "api_call_count": 60
+    "input_tokens": 94,
+    "cache_creation_tokens": 94474,
+    "cache_read_tokens": 2434917,
+    "output_tokens": 10461,
+    "api_call_count": 66
   }
 }
