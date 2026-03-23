@@ -1,0 +1,21 @@
+ok push lên
+
+---
+
+/brainstorming
+
+---
+
+/brainstorming  check this issue and fix https://github.com/Open-ACP/OpenACP/issues/21
+
+---
+
+ok
+
+---
+
+checkout sang nhánh khác trước đã xong làm
+
+---
+
+dùng gittree được kh
