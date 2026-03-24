@@ -1,0 +1,28 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "016c6d89116b",
+  "strategy": "manual-commit",
+  "branch": "feat/multi-adapter-adopt",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "src/adapters/discord/adapter.ts",
+    "src/adapters/discord/media.test.ts",
+    "src/adapters/discord/media.ts",
+    "src/core/config.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/01/6c6d89116b/0/metadata.json",
+      "transcript": "/01/6c6d89116b/0/full.jsonl",
+      "content_hash": "/01/6c6d89116b/0/content_hash.txt",
+      "prompt": "/01/6c6d89116b/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 29,
+    "cache_creation_tokens": 75382,
+    "cache_read_tokens": 862604,
+    "output_tokens": 4129,
+    "api_call_count": 23
+  }
+}

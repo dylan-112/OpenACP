@@ -1,0 +1,14 @@
+/brainstorming there are some suggestion from openacp that we need to fix. check and see how to do: After thorough re-review, the 4 critical blockers from earlier reviews were false positives caused by plan docs vs actual implementation confusion. All previous legitimate feedback has been addressed in subsequent commits.
+
+Remaining minor suggestions (non-blocking):
+Slash commands bypass allowedUserIds — Consider adding a user check in handleSlashCommand or setupInteractionHandler so only allowed users can run commands like /restart, /dangerous, /new. Currently any guild member can use these.
+
+config.ts Discord default botToken — "YOUR_DISCORD_BOT_TOKEN_HERE" → "" for consistency with Telegram defaults and to avoid noise in config files for Telegram-only users.
+
+classifyAttachmentType in media.ts — Exported and tested but not called anywhere. Remove or wire it in.
+
+None of these are blocking. Good work on the security fixes, Discord adapter, and media support.
+
+---
+
+R thế luồng người dùng thay đổi những cái gì
