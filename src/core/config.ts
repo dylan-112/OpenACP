@@ -154,14 +154,14 @@ const DEFAULT_CONFIG = {
   channels: {
     telegram: {
       enabled: false,
-      botToken: "YOUR_BOT_TOKEN_HERE",
+      botToken: "",
       chatId: 0,
       notificationTopicId: null,
       assistantTopicId: null,
     },
     discord: {
       enabled: false,
-      botToken: "YOUR_DISCORD_BOT_TOKEN_HERE",
+      botToken: "",
       guildId: "",
       forumChannelId: null,
       notificationChannelId: null,

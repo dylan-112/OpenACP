@@ -12,18 +12,6 @@ export function isAttachmentTooLarge(size: number): boolean {
 }
 
 /**
- * Classify a MIME contentType string into an Attachment type.
- */
-export function classifyAttachmentType(
-  contentType: string | null | undefined,
-): Attachment['type'] {
-  if (!contentType) return 'file'
-  if (contentType.startsWith('image/')) return 'image'
-  if (contentType.startsWith('audio/')) return 'audio'
-  return 'file'
-}
-
-/**
  * Build fallback text when message.content is empty but attachments exist.
  * Mirrors Telegram adapter's pattern: [Photo: filename], [Audio: filename], [File: filename]
  */

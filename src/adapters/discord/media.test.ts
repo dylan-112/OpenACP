@@ -1,29 +1,5 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
-import { classifyAttachmentType, buildFallbackText, isAttachmentTooLarge, downloadDiscordAttachment } from './media.js'
-
-describe('classifyAttachmentType', () => {
-  it('classifies image/* as image', () => {
-    expect(classifyAttachmentType('image/png')).toBe('image')
-    expect(classifyAttachmentType('image/jpeg')).toBe('image')
-    expect(classifyAttachmentType('image/webp')).toBe('image')
-  })
-
-  it('classifies audio/* as audio', () => {
-    expect(classifyAttachmentType('audio/ogg')).toBe('audio')
-    expect(classifyAttachmentType('audio/mpeg')).toBe('audio')
-  })
-
-  it('classifies other types as file', () => {
-    expect(classifyAttachmentType('application/pdf')).toBe('file')
-    expect(classifyAttachmentType('video/mp4')).toBe('file')
-    expect(classifyAttachmentType('text/plain')).toBe('file')
-  })
-
-  it('defaults to file for null/undefined contentType', () => {
-    expect(classifyAttachmentType(null)).toBe('file')
-    expect(classifyAttachmentType(undefined)).toBe('file')
-  })
-})
+import { buildFallbackText, isAttachmentTooLarge, downloadDiscordAttachment } from './media.js'
 
 describe('buildFallbackText', () => {
   it('generates text from single attachment', () => {

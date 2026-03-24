@@ -164,9 +164,23 @@ export class DiscordAdapter extends ChannelAdapter<OpenACPCore> {
 
   // ─── Interaction handler ──────────────────────────────────────────────────
 
+  private isUserAllowed(userId: string): boolean {
+    const config = this.core.configManager.get()
+    const allowed = config.security.allowedUserIds
+    return allowed.length === 0 || allowed.includes(userId)
+  }
+
   private setupInteractionHandler(): void {
     this.client.on('interactionCreate', async (interaction) => {
       try {
+        if (!this.isUserAllowed(interaction.user.id)) {
+          log.warn({ userId: interaction.user.id }, '[DiscordAdapter] Unauthorized interaction blocked')
+          if (interaction.isRepliable()) {
+            await interaction.reply({ content: '⛔ You are not authorized to use this bot.', ephemeral: true })
+          }
+          return
+        }
+
         if (interaction.isChatInputCommand()) {
           await handleSlashCommand(interaction, this)
           return
