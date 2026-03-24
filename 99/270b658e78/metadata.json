@@ -3,13 +3,15 @@
   "checkpoint_id": "99270b658e78",
   "strategy": "manual-commit",
   "branch": "develop",
-  "checkpoints_count": 1,
+  "checkpoints_count": 12,
   "files_touched": [
     "src/adapters/discord/adapter.ts",
     "src/adapters/discord/commands/admin.ts",
     "src/adapters/discord/commands/index.ts",
     "src/adapters/discord/commands/menu.ts",
+    "src/adapters/discord/commands/new-session.ts",
     "src/adapters/discord/commands/router.ts",
+    "src/adapters/discord/commands/settings.ts",
     "src/adapters/discord/draft-manager.ts",
     "src/adapters/discord/streaming.ts",
     "src/core/core.ts"
@@ -20,13 +22,19 @@
       "transcript": "/99/270b658e78/0/full.jsonl",
       "content_hash": "/99/270b658e78/0/content_hash.txt",
       "prompt": "/99/270b658e78/0/prompt.txt"
+    },
+    {
+      "metadata": "/99/270b658e78/1/metadata.json",
+      "transcript": "/99/270b658e78/1/full.jsonl",
+      "content_hash": "/99/270b658e78/1/content_hash.txt",
+      "prompt": "/99/270b658e78/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 6,
-    "cache_creation_tokens": 6742,
-    "cache_read_tokens": 96234,
-    "output_tokens": 221,
-    "api_call_count": 4
+    "input_tokens": 2983,
+    "cache_creation_tokens": 104280,
+    "cache_read_tokens": 6410069,
+    "output_tokens": 14763,
+    "api_call_count": 89
   }
 }

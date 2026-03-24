@@ -1,0 +1,61 @@
+kéo code mới nhất về
+
+---
+
+1
+
+---
+
+merge cả dev upstream vào dev hiện tại
+
+---
+
+check đoạn thêm TTS nó đang làm gì
+
+---
+
+/brainstorming T muốn m tích hợp logic TTS với discord. Hiện tại đang chỉ nhận từ tele. Học các tele nó dùng để update discord
+
+---
+
+Ok chỉ cần copy từ tele sang nhưng work với discord là được
+
+---
+
+ok t thuwr tinhs nawng dudowcj chuaw
+
+---
+
+config kiểu gì
+
+---
+
+Thế ở tele có buớc chỉ đăng ký xong xong chỉ người dùng gửi cho đâu cần tự config trực tiếp đâu
+
+---
+
+flow bên tele có cả text to speech và speech to text
+
+---
+
+T muốn apply để giống hệt như tele đang sử lý cả ở list button có các button tts nào
+
+---
+
+ok
+
+---
+
+cách dùng button ở discord kiểu gì nhỉ
+
+---
+
+how to enable speech to text
+
+---
+
+check tele đang làm như nào để implement phần này cho discord
+
+---
+
+T gửi /settings nó kh có nút text to speech

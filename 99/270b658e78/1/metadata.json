@@ -1,0 +1,42 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "99270b658e78",
+  "session_id": "ecbdb99e-9dbd-47df-8c36-472f00040cb6",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-24T10:54:10.067066Z",
+  "branch": "develop",
+  "checkpoints_count": 11,
+  "files_touched": [
+    "src/adapters/discord/adapter.ts",
+    "src/adapters/discord/commands/admin.ts",
+    "src/adapters/discord/commands/index.ts",
+    "src/adapters/discord/commands/menu.ts",
+    "src/adapters/discord/commands/new-session.ts",
+    "src/adapters/discord/commands/router.ts",
+    "src/adapters/discord/commands/settings.ts",
+    "src/adapters/discord/draft-manager.ts",
+    "src/adapters/discord/streaming.ts",
+    "src/core/core.ts"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "1f59e4cf5cb9",
+  "token_usage": {
+    "input_tokens": 2977,
+    "cache_creation_tokens": 97538,
+    "cache_read_tokens": 6313835,
+    "output_tokens": 14542,
+    "api_call_count": 85
+  },
+  "session_metrics": {
+    "turn_count": 16
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-24T10:54:09.504519Z",
+    "agent_lines": 491,
+    "human_added": 1507,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1998,
+    "agent_percentage": 24.574574574574577
+  }
+}
