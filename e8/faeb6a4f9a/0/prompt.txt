@@ -1,0 +1,13 @@
+Tạo pr vào dev upstream
+
+---
+
+Tại sao t enable text to speech nó nói 1 câu xong t lại phải enable lại. Check lai cho t xem
+
+---
+
+vậy là t cần dùng /tts next đúng kh
+
+---
+
+check this review and fix https://github.com/Open-ACP/OpenACP/pull/57#pullrequestreview-3998221684
