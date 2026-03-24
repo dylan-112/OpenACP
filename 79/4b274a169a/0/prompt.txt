@@ -1,0 +1,41 @@
+/brainstorming T cần m viết cho t 1 prompts t đưa cho con gemini tạo video mục đích là: quảng cáo sản phẩm tính năng của project này. fomo người xem muốn sử dụng và cài sẳn phẩm
+
+---
+
+Video 8s
+
+---
+
+/openacp:handoff discord
+
+---
+
+Sao t kh thấy tạo chat mới trên discord để tiếp tục session này
+
+---
+
+ok fix đi
+
+---
+
+ok restart cho t
+
+---
+
+/openacp:handoff discord
+
+---
+
+t vừa nói chuyện gì với m
+
+---
+
+/openacp:handoff telegram
+
+---
+
+hi
+
+---
+
+t vừa hỏi gì m
