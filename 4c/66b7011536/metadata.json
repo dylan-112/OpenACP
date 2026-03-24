@@ -1,0 +1,28 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "4c66b7011536",
+  "strategy": "manual-commit",
+  "branch": "feat/multi-adapter-adopt",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/guide/getting-started.md",
+    "src/cli/commands.ts",
+    "src/cli/integrate.ts",
+    "src/core/core.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/4c/66b7011536/0/metadata.json",
+      "transcript": "/4c/66b7011536/0/full.jsonl",
+      "content_hash": "/4c/66b7011536/0/content_hash.txt",
+      "prompt": "/4c/66b7011536/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 25,
+    "cache_creation_tokens": 31809,
+    "cache_read_tokens": 801296,
+    "output_tokens": 2233,
+    "api_call_count": 21
+  }
+}
