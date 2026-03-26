@@ -1,0 +1,1 @@
+/brainstorming T muốn thêm chức năng là: có thể clear các session cũ đi. và xoá các kênh chat cho session đó luôn tại vì sau 1 hồi t tạo nhiều kênh trong topic quá. T muốn xoá đi mà xoá tay rất mất thời gian và kh biết đã ngừng hoạt động từ bao giờ

@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "8de760ac911e",
+  "session_id": "7443e2f4-6d9c-4145-bc0a-f5710e7a6a44",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-26T09:48:16.958945Z",
+  "branch": "redesign/microkernel-plugin-architecture",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "docs/superpowers/specs/2026-03-26-session-cleanup-design.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "2d801363e26f",
+  "token_usage": {
+    "input_tokens": 33,
+    "cache_creation_tokens": 27915,
+    "cache_read_tokens": 1047157,
+    "output_tokens": 5615,
+    "api_call_count": 31
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-26T09:48:16.76667Z",
+    "agent_lines": 0,
+    "human_added": 160,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 160,
+    "agent_percentage": 0
+  }
+}
