@@ -7,3 +7,21 @@ check thay đổi của kiến trúc hiện tại so với cái cũ như nào
 ---
 
 https://github.com/Open-ACP/OpenACP/issues/76 fix issue này
+
+---
+
+ok commit xong push lên
+
+---
+
+Tại sao t bảo tạo session mới vẫn ra tele
+
+---
+
+Tại sao t bảo tạo session mới vẫn ra tele [09:03:59] INFO: Agent prompt capabilities {"module":"agent-instance","promptCapabilities":{"image":true,"embeddedContext":true}}
+[09:03:00] INFO: Agent spawn complete {"module":"agent-instance","sessionId":"101f9bf1-9eca-4508-ad4f-cd9de394ad13","durationMs":3184}
+[09:03:00] INFO: Session created {"module":"session","sessionId":"gUn5F8XFJxAU","agentName":"claude"}
+[09:03:00] INFO (🔄 claude — New Session): Session topic created {"module":"telegram","sessionId":"gUn5F8XFJxAU"}
+[09:03:02] INFO: Session created via pipeline {"module":"core","sessionId":"gUn5F8XFJxAU","agentName":"claude"}
+[09:03:04] INFO: Warm-up complete {"module":"session","sessionId":"gUn5F8XFJxAU","durationMs":1922}
+[09:03:11] INFO: Prompt execution completed {"module":"session","sessionId":"mM-2ZdiysX5n","durationMs":22283}
