@@ -1,0 +1,9 @@
+checkout sang nhánh này redesign/microkernel-plugin-architecture. Từ upstream của nhánh redesign/microkernel-plugin-architecture
+
+---
+
+check thay đổi của kiến trúc hiện tại so với cái cũ như nào
+
+---
+
+https://github.com/Open-ACP/OpenACP/issues/76 fix issue này
