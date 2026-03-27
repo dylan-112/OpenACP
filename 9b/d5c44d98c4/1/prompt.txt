@@ -1,0 +1,13 @@
+check lại pr này làm gì https://github.com/Open-ACP/OpenACP/pull/80
+
+---
+
+Đã fix hết https://github.com/Open-ACP/OpenACP/pull/80#pullrequestreview-4018917272 chưa
+
+---
+
+fix luôn đi
+
+---
+
+sao đây
