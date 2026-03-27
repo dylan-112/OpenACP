@@ -1,0 +1,33 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "a54a5510736a",
+  "session_id": "7443e2f4-6d9c-4145-bc0a-f5710e7a6a44",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-27T03:18:47.905225Z",
+  "branch": "redesign/microkernel-plugin-architecture",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/superpowers/plans/2026-03-27-extract-discord-plugin.md"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "e6af8d43edee",
+  "token_usage": {
+    "input_tokens": 121,
+    "cache_creation_tokens": 137451,
+    "cache_read_tokens": 5991781,
+    "output_tokens": 25943,
+    "api_call_count": 95
+  },
+  "session_metrics": {
+    "turn_count": 9
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-27T03:18:46.592559Z",
+    "agent_lines": 653,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 1,
+    "total_committed": 653,
+    "agent_percentage": 100
+  }
+}
