@@ -1,0 +1,7 @@
+✗ Failed to install @openacp/adapter-discord: Cannot find package '@openacp/adapter-discord' imported from /Users/lab3/Documents/lab3/OpenACP/dist/core/plugin/plugin-installer.js
+✗ You can install it later with: openacp plugin add @openacp/adapter-discord
+lại có lỗi
+
+---
+
+check lại nó có trên npm chưa
