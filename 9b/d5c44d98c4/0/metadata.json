@@ -1,0 +1,42 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "9bd5c44d98c4",
+  "session_id": "4353405d-1b26-43fc-bfbe-5fe70b7c4622",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-27T07:12:49.53351Z",
+  "branch": "redesign/microkernel-plugin-architecture",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "src/plugins/telegram/assistant.ts",
+    "packages/plugin-sdk/package.json",
+    "packages/plugin-sdk/src/config.ts",
+    "packages/plugin-sdk/src/formatting.ts",
+    "packages/plugin-sdk/src/index.ts",
+    "src/cli/commands/api.ts",
+    "src/plugins/__tests__/plugin-wrappers.test.ts",
+    "src/plugins/api-server/routes/sessions.ts"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "7546087f2eaf",
+  "checkpoint_transcript_start": 176,
+  "transcript_lines_at_start": 176,
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  },
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-27T07:12:49.347343Z",
+    "agent_lines": 0,
+    "human_added": 0,
+    "human_modified": 51,
+    "human_removed": 2,
+    "total_committed": 0,
+    "agent_percentage": 0
+  }
+}
