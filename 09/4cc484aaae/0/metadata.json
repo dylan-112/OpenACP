@@ -1,0 +1,23 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "094cc484aaae",
+  "session_id": "4f006c50-41a2-4068-9750-70abf7d7dd6e",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-27T08:40:33.032076Z",
+  "branch": "redesign/microkernel-plugin-architecture",
+  "checkpoints_count": 1,
+  "files_touched": [],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-6",
+  "turn_id": "02d311956227",
+  "token_usage": {
+    "input_tokens": 3259,
+    "cache_creation_tokens": 138030,
+    "cache_read_tokens": 16467503,
+    "output_tokens": 23992,
+    "api_call_count": 179
+  },
+  "session_metrics": {
+    "turn_count": 22
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "094cc484aaae",
+  "strategy": "manual-commit",
+  "branch": "redesign/microkernel-plugin-architecture",
+  "checkpoints_count": 1,
+  "files_touched": null,
+  "sessions": [
+    {
+      "metadata": "/09/4cc484aaae/0/metadata.json",
+      "transcript": "/09/4cc484aaae/0/full.jsonl",
+      "content_hash": "/09/4cc484aaae/0/content_hash.txt",
+      "prompt": "/09/4cc484aaae/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 3259,
+    "cache_creation_tokens": 138030,
+    "cache_read_tokens": 16467503,
+    "output_tokens": 23992,
+    "api_call_count": 179
+  }
+}
