@@ -1,0 +1,23 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "512775b194fb",
+  "strategy": "manual-commit",
+  "branch": "fix/setup-wizard-plugin-init",
+  "checkpoints_count": 1,
+  "files_touched": null,
+  "sessions": [
+    {
+      "metadata": "/51/2775b194fb/0/metadata.json",
+      "transcript": "/51/2775b194fb/0/full.jsonl",
+      "content_hash": "/51/2775b194fb/0/content_hash.txt",
+      "prompt": "/51/2775b194fb/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 326,
+    "cache_creation_tokens": 320555,
+    "cache_read_tokens": 24889732,
+    "output_tokens": 44409,
+    "api_call_count": 262
+  }
+}

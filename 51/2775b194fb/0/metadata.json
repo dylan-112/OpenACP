@@ -1,0 +1,22 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "512775b194fb",
+  "session_id": "7443e2f4-6d9c-4145-bc0a-f5710e7a6a44",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-27T10:47:11.383734Z",
+  "branch": "fix/setup-wizard-plugin-init",
+  "checkpoints_count": 1,
+  "files_touched": [],
+  "agent": "Claude Code",
+  "turn_id": "7d799be19b6d",
+  "token_usage": {
+    "input_tokens": 326,
+    "cache_creation_tokens": 320555,
+    "cache_read_tokens": 24889732,
+    "output_tokens": 44409,
+    "api_call_count": 262
+  },
+  "session_metrics": {
+    "turn_count": 21
+  }
+}
