@@ -3,7 +3,7 @@
   "checkpoint_id": "6ed1a02a0cb5",
   "strategy": "manual-commit",
   "branch": "redesign/microkernel-plugin-architecture",
-  "checkpoints_count": 0,
+  "checkpoints_count": 1,
   "files_touched": [
     "src/core/adapter-primitives/index.ts",
     "src/core/plugin/dev-loader.ts",
@@ -21,13 +21,19 @@
       "transcript": "/6e/d1a02a0cb5/1/full.jsonl",
       "content_hash": "/6e/d1a02a0cb5/1/content_hash.txt",
       "prompt": "/6e/d1a02a0cb5/1/prompt.txt"
+    },
+    {
+      "metadata": "/6e/d1a02a0cb5/2/metadata.json",
+      "transcript": "/6e/d1a02a0cb5/2/full.jsonl",
+      "content_hash": "/6e/d1a02a0cb5/2/content_hash.txt",
+      "prompt": "/6e/d1a02a0cb5/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 42,
-    "cache_creation_tokens": 19745,
-    "cache_read_tokens": 1627202,
-    "output_tokens": 1403,
-    "api_call_count": 28
+    "input_tokens": 368,
+    "cache_creation_tokens": 340300,
+    "cache_read_tokens": 26516934,
+    "output_tokens": 45812,
+    "api_call_count": 290
   }
 }
