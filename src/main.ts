@@ -10,6 +10,7 @@ import { CommandRegistry } from './core/command-registry.js'
 import { registerSystemCommands } from './core/commands/index.js'
 import type { IChannelAdapter } from './core/channel.js'
 import type { TunnelService } from './plugins/tunnel/tunnel-service.js'
+import { importFromDir } from './core/plugin/plugin-installer.js'
 import fs from 'node:fs'
 import path from 'node:path'
 import os from 'node:os'
@@ -126,6 +127,28 @@ export async function startServer(opts?: StartServerOptions) {
 
     // Boot all built-in plugins in dependency order
     await core.lifecycleManager.boot(corePlugins)
+
+    // Load npm-installed plugins from registry
+    const PLUGINS_DIR = path.join(os.homedir(), '.openacp', 'plugins')
+    const npmPlugins = []
+    for (const [name, entry] of pluginRegistry.listEnabled()) {
+      if (entry.source !== 'npm') continue
+      try {
+        const mod = await importFromDir(name, PLUGINS_DIR)
+        const plugin = mod.default ?? mod
+        if (plugin && typeof plugin.setup === 'function') {
+          npmPlugins.push(plugin)
+          log.info({ plugin: name, version: entry.version }, 'npm plugin loaded')
+        } else {
+          log.warn({ plugin: name }, 'npm plugin has no setup() export, skipping')
+        }
+      } catch (err) {
+        log.error({ err, plugin: name }, 'Failed to load npm plugin')
+      }
+    }
+    if (npmPlugins.length > 0) {
+      await core.lifecycleManager.boot(npmPlugins)
+    }
 
     // Load dev plugin if running in dev mode
     if (opts?.devPluginPath) {
