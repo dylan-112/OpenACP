@@ -108,3 +108,7 @@ Plugin "@openacp/plugin-discord" not found.
 ---
 
 Nãy là lỗi gì đấy
+
+---
+
+ok h đảy hết lên git. Tạo pull request cho t
