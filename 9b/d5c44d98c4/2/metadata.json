@@ -1,0 +1,33 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "9bd5c44d98c4",
+  "session_id": "7443e2f4-6d9c-4145-bc0a-f5710e7a6a44",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-27T07:12:58.809585Z",
+  "branch": "redesign/microkernel-plugin-architecture",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "packages/plugin-sdk/package.json"
+  ],
+  "agent": "Claude Code",
+  "turn_id": "7d799be19b6d",
+  "token_usage": {
+    "input_tokens": 326,
+    "cache_creation_tokens": 320555,
+    "cache_read_tokens": 24889732,
+    "output_tokens": 44409,
+    "api_call_count": 262
+  },
+  "session_metrics": {
+    "turn_count": 21
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-27T07:12:56.203375Z",
+    "agent_lines": 0,
+    "human_added": 51,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 51,
+    "agent_percentage": 0
+  }
+}
