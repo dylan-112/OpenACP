@@ -1,0 +1,18 @@
+Core import                      │ 🔴       │ Xóa dynamic import, thay bằng inline validateDiscordToken() gọi trực tiếp Discord REST API GET /users/@me — core không còn  │
+  │ @openacp/plugin-discord          │          │ biết plugin nào tồn tại                                                                                                     │
+  ├──────────────────────────────────┼──────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ legacyMap hardcode plugin names  │ 🟡       │ Thêm @deprecated comment, document đây là migration layer sẽ remove sau                                                     │
+  ├──────────────────────────────────┼──────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Planning artifacts committed     │ 🟢       │ Xóa toàn bộ docs/superpowers/ (98 files, 73k+ lines)                                                                        │
+  ├──────────────────────────────────┼──────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Unrelated changes in PR          │ 🟡       │ Chưa tách — cần bạn quyết định có muốn tách PR hay không                                                                    │
+  ├──────────────────────────────────┼──────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ SDK export surface area          │ 🟡       │ Chưa fix — cần thiết kế sub-path exports, có thể làm PR riêng mới fix cái này có ảnh hưởng gì đến m kh
+
+---
+
+Ý là đã fix r. Nhưng t thắc mắc cái fix r có ảnh hưởng gì đên cái m sửa bên trên kh
+
+---
+
+ok commit vào PR https://github.com/Open-ACP/OpenACP/pull/80 đi. T muốn m kéo về rồi fix conflict xong mới push lên đừng để mất code

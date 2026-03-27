@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "6ed1a02a0cb5",
+  "strategy": "manual-commit",
+  "branch": "redesign/microkernel-plugin-architecture",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "src/core/adapter-primitives/index.ts",
+    "src/core/plugin/dev-loader.ts",
+    "src/core/plugin/lifecycle-manager.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/6e/d1a02a0cb5/0/metadata.json",
+      "transcript": "/6e/d1a02a0cb5/0/full.jsonl",
+      "content_hash": "/6e/d1a02a0cb5/0/content_hash.txt",
+      "prompt": "/6e/d1a02a0cb5/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 20,
+    "cache_creation_tokens": 8264,
+    "cache_read_tokens": 719333,
+    "output_tokens": 805,
+    "api_call_count": 14
+  }
+}
