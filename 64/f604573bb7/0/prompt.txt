@@ -1,0 +1,110 @@
+ok dừng lại bước viết spec thôi để t đẩy lên cho bên kia duyệt nó họ đồng ý thì t mới bắt đầu làm
+
+---
+
+/openacp:handoff telegram
+
+---
+
+kéo code mới nhất từ upstream vớ nhánh cùng tên về
+
+---
+
+/brainstorming
+
+---
+
+/brainstorming t muốn thay đổi 1 chút là tách hoàn toàn plugin ra thành 1 project mới chỉ khi nào chọn thì mới cài vào openacp để tránh nặng mà kh dùng đến.
+Đây là docs hướng dẫn viết plugin: https://github.com/Open-ACP/OpenACP/blob/redesign/microkernel-plugin-architecture/docs/gitbook/extending/getting-started-plugin.md
+Đây là repo mới cần move plugin discord sang: /Users/lab3/Documents/lab3/discord-plugin
+
+---
+
+ok r tiếp tục đi
+
+---
+
+/Users/lab3/Documents/lab3/discord-plugin Cái này t muốn folk ra nhánh project của mình trước khi đảy lên
+
+---
+
+Tạo cái specs sang bên đó
+
+---
+
+ok tiếp tục làm specs thôi
+
+---
+
+số 2
+
+---
+
+1
+
+---
+
+ok giờ t test như nào được
+
+---
+
+[04:03:36] ERROR: Unhandled rejection
+    err: {
+      "type": "GrammyError",
+      "message": "Call to 'getUpdates' failed! (409: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running)",
+      "stack":
+          GrammyError: Call to 'getUpdates' failed! (409: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running)
+              at toGrammyError (/Users/lab3/Documents/lab3/OpenACP/node_modules/.pnpm/grammy@1.41.1/node_modules/grammy/out/core/error.js:47:12)
+              at ApiClient.callApi (/Users/lab3/Documents/lab3/OpenACP/node_modules/.pnpm/grammy@1.41.1/node_modules/grammy/out/core/client.js:100:48)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async Bot.fetchUpdates (/Users/lab3/Documents/lab3/OpenACP/node_modules/.pnpm/grammy@1.41.1/node_modules/grammy/out/bot.js:423:27)
+              at async Bot.loop (/Users/lab3/Documents/lab3/OpenACP/node_modules/.pnpm/grammy@1.41.1/node_modules/grammy/out/bot.js:394:33)
+              at async Bot.start (/Users/lab3/Documents/lab3/OpenACP/node_modules/.pnpm/grammy@1.41.1/node_modules/grammy/out/bot.js:315:9)
+      "method": "getUpdates",
+      "payload": {
+        "offset": 1,
+        "timeout": 30,
+        "allowed_updates": [
+          "message",
+          "callback_query"
+        ]
+      },
+      "ok": false,
+      "name": "GrammyError",
+      "error_code": 409,
+      "description": "Conflict: terminated by other getUpdates request; make sure that only one bot instance is running",
+      "parameters": {}
+    }
+ this error
+
+---
+
+ok
+
+---
+
+T dùng openacp dev . ở trong plugin r
+
+---
+
+kh biết check như nào
+
+---
+
+làm sao để biết discord plugin đã được hắn hay chưa
+
+---
+
+T tắt hết r đó m tự chạy để check đi.
+openacp nên ùng pnpm dev:loop để check log dev
+còn plugin dùng openacp dev . 
+Tự làm tự test xem lại sao chưa work cho t
+
+---
+
+➜  OpenACP git:(redesign/microkernel-plugin-architecture) ✗  openacp plugin configure @openacp/plugin-discord
+Plugin "@openacp/plugin-discord" not found.
+
+---
+
+Nãy là lỗi gì đấy
