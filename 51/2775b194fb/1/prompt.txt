@@ -1,0 +1,2 @@
+◇  ✗ Failed to install @openacp/adapter-discord: No "exports" main defined in /Users/lab3/.openacp/plugins/data/node_modules/@openacp/adapter-discord/package.json
+✗ You can install it later with: openacp plugin add @openacp/adapter-discord
