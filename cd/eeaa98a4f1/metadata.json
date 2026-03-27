@@ -3,7 +3,7 @@
   "checkpoint_id": "cdeeaa98a4f1",
   "strategy": "manual-commit",
   "branch": "redesign/microkernel-plugin-architecture",
-  "checkpoints_count": 3,
+  "checkpoints_count": 4,
   "files_touched": [
     "docs/superpowers/plans/2026-03-19-cli-onboarding.md",
     "docs/superpowers/plans/2026-03-19-logging-system.md",
@@ -123,13 +123,19 @@
       "transcript": "/cd/eeaa98a4f1/1/full.jsonl",
       "content_hash": "/cd/eeaa98a4f1/1/content_hash.txt",
       "prompt": "/cd/eeaa98a4f1/1/prompt.txt"
+    },
+    {
+      "metadata": "/cd/eeaa98a4f1/2/metadata.json",
+      "transcript": "/cd/eeaa98a4f1/2/full.jsonl",
+      "content_hash": "/cd/eeaa98a4f1/2/content_hash.txt",
+      "prompt": "/cd/eeaa98a4f1/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 57,
-    "cache_creation_tokens": 68931,
-    "cache_read_tokens": 1913717,
-    "output_tokens": 6934,
-    "api_call_count": 49
+    "input_tokens": 383,
+    "cache_creation_tokens": 389486,
+    "cache_read_tokens": 26803449,
+    "output_tokens": 51343,
+    "api_call_count": 311
   }
 }
