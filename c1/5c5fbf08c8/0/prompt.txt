@@ -1,0 +1,25 @@
+sao
+
+---
+
+Revert 3 files về upstream version nghĩa là cá thay đổi đó ở đâu r
+
+---
+
+push lên chưa
+
+---
+
+ok tạo PR riêng đi
+
+---
+
+check https://github.com/Open-ACP/OpenACP/pull/80#pullrequestreview-4019496196 comment này và fix
+
+---
+
+kéo code bề sử lý conflict kh rebase
+
+---
+
+fix https://github.com/Open-ACP/OpenACP/pull/80#pullrequestreview-4019548354. Check lại xem còn cái gì liên quan discord kh. t chỉ cần đúng đoạn lúc onboarding thôi. Nếu chọn thì install
