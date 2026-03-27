@@ -1,0 +1,23 @@
+ok dừng lại bước viết spec thôi để t đẩy lên cho bên kia duyệt nó họ đồng ý thì t mới bắt đầu làm
+
+---
+
+/openacp:handoff telegram
+
+---
+
+kéo code mới nhất từ upstream vớ nhánh cùng tên về
+
+---
+
+/brainstorming
+
+---
+
+/brainstorming t muốn thay đổi 1 chút là tách hoàn toàn plugin ra thành 1 project mới chỉ khi nào chọn thì mới cài vào openacp để tránh nặng mà kh dùng đến.
+Đây là docs hướng dẫn viết plugin: https://github.com/Open-ACP/OpenACP/blob/redesign/microkernel-plugin-architecture/docs/gitbook/extending/getting-started-plugin.md
+Đây là repo mới cần move plugin discord sang: /Users/lab3/Documents/lab3/discord-plugin
+
+---
+
+ok r tiếp tục đi
