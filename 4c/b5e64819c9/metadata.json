@@ -3,21 +3,30 @@
   "checkpoint_id": "4cb5e64819c9",
   "strategy": "manual-commit",
   "branch": "fix/setup-wizard-plugin-init",
-  "checkpoints_count": 0,
-  "files_touched": null,
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/cli/commands/default.ts",
+    "src/cli/commands/onboard.ts"
+  ],
   "sessions": [
     {
       "metadata": "/4c/b5e64819c9/0/metadata.json",
       "transcript": "/4c/b5e64819c9/0/full.jsonl",
       "content_hash": "/4c/b5e64819c9/0/content_hash.txt",
       "prompt": "/4c/b5e64819c9/0/prompt.txt"
+    },
+    {
+      "metadata": "/4c/b5e64819c9/1/metadata.json",
+      "transcript": "/4c/b5e64819c9/1/full.jsonl",
+      "content_hash": "/4c/b5e64819c9/1/content_hash.txt",
+      "prompt": "/4c/b5e64819c9/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 0,
-    "cache_creation_tokens": 0,
-    "cache_read_tokens": 0,
-    "output_tokens": 0,
-    "api_call_count": 0
+    "input_tokens": 14,
+    "cache_creation_tokens": 23230,
+    "cache_read_tokens": 340648,
+    "output_tokens": 1995,
+    "api_call_count": 10
   }
 }

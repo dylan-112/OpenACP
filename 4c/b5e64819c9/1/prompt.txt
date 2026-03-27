@@ -1,0 +1,23 @@
+check lỗi init > @openacp/cli@2026.0327.1 dev:loop /Users/lab3/Documents/lab3/OpenACP
+> ./scripts/dev-loop.sh
+
+▸ Building...
+
+> @openacp/cli@2026.0327.1 build /Users/lab3/Documents/lab3/OpenACP
+> tsc && mkdir -p dist/data && cp src/data/registry-snapshot.json dist/data/
+
+▸ Build complete.
+▸ Starting OpenACP...
+
+   ██████╗ ██████╗ ███████╗███╗   ██╗ █████╗  ██████╗██████╗
+  ██╔═══██╗██╔══██╗██╔════╝████╗  ██║██╔══██╗██╔════╝██╔══██╗
+  ██║   ██║██████╔╝█████╗  ██╔██╗ ██║███████║██║     ██████╔╝
+  ██║   ██║██╔═══╝ ██╔══╝  ██║╚██╗██║██╔══██║██║     ██╔═══╝
+  ╚██████╔╝██║     ███████╗██║ ╚████║██║  ██║╚██████╗██║
+   ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝╚═╝
+
+              AI coding agents, anywhere.  v2026.0327.1
+
+┌  Let's set up OpenACP
+✗ Plugin system not initialized. Cannot set up channels.
+▸ OpenACP exited with code 0.
